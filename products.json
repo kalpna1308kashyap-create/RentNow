@@ -1,5 +1,8 @@
 [
   { "name": "Beer Pong Table", "price": 1200, "image": "images/Beerpong.jpg" },
-  { "name": "Shuffleboard", "price": 2500, "image": "images/Sequence.jpg" },
-  { "name": "Couples Party Package", "price": 4999, "image": "images/Catan_01.jpg" }
+  { "name": "Sequence", "price": 2500, "image": "images/Sequence.jpg" },
+  { "name": "Couples Party Package", "price": 4999, "image": "images/Catan_1.jpg" }
+  { "name": "Hookah", "price": 1000, "image": "images/Hookah.jpg" }
+  { "name": "UNOStacko", "price": 200, "image": "images/UNOStacko.jpg" }
+  { "name": "DartBoard", "price": 200, "image": "images/DartBoard.jpg" }
 ]
