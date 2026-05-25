@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Products & Packages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Our Products & Packages</h1>
+  <div id="products" class="products"></div>
+
+  <script>
+    fetch('products.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('products');
+        data.forEach(p => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${p.image}" alt="${p.name}">
+            <h3>${p.name}</h3>
+            <p>₹${p.price}</p>
+            <button>Book Now</button>
+          `;
+          container.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>
